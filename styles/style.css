@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+
+/* font-family: 'Lexend Deca', sans-serif; */
+
+/* font-family: 'Big Shoulders Display', cursive; */
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0, 0%, 95%);
+}
+
+main {
+  margin: 40px 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+main div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 30px;
+}
+
+main div h3,
+.btn {
+  color: hsl(0, 0%, 95%);
+}
+
+main div h3 {
+  padding-top: 15px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+main div p {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  letter-spacing: 1px;
+  opacity: 1;
+}
+
+main div:first-child {
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+main div:first-child > button {
+  color: var(--Bright-orange);
+  width: 125px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+}
+
+main div:nth-child(2) {
+  background-color: var(--Dark-cyan);
+}
+
+main div:nth-child(2) > button {
+  color: var(--Dark-cyan);
+  width: 125px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+}
+
+main div:last-child {
+  background-color: var(--Very-dark-cyan);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+main div:last-child > button {
+  color: var(--Very-dark-cyan);
+  width: 125px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    height: 450px;
+  }
+
+  main div {
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 40px;
+  }
+
+  main div:first-child {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+  }
+
+  main div:last-child {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 10px;
+  }
+
+  main div h3 {
+    padding-top: 20px;
+  }
+
+  main div p {
+    letter-spacing: 1px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .btn {
+    margin-top: 40px;
+  }
+}
