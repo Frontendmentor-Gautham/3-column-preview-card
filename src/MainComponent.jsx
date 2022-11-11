@@ -6,7 +6,8 @@ const MainComponent = () => {
     <>
       <main>
         <div>
-          <img src="./images/icon-sedans.svg" alt="sedan icon" />
+          
+          <img src="../images/icon-sedans.svg" alt="sedan icon" />
           <h3>SEDANS</h3>
           <p>
             Choose a sedan for its affordability and excellent fuel economy.
@@ -16,7 +17,7 @@ const MainComponent = () => {
         </div>
 
         <div>
-          <img src="./images/icon-suvs.svg" alt="suv icon" />
+          <img src="../images/icon-suvs.svg" alt="suv icon" />
           <h3>SUVs</h3>
           <p>
             Take an SUV for its spacious interior, power, and versatility.
@@ -26,7 +27,7 @@ const MainComponent = () => {
         </div>
 
         <div>
-          <img src="./images/icon-luxury.svg" alt="luxury icon" />
+          <img src="../images/icon-luxury.svg" alt="luxury icon" />
           <h3>LUXURY</h3>
           <p>
             Cruise in the best car brands without the bloated prices. Enjoy the
